@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Robotics_portfolio/static/css/main.122fb624.chunk.css",
+    "main.js": "/Robotics_portfolio/static/js/main.413c05a1.chunk.js",
+    "main.js.map": "/Robotics_portfolio/static/js/main.413c05a1.chunk.js.map",
+    "runtime-main.js": "/Robotics_portfolio/static/js/runtime-main.39d5914a.js",
+    "runtime-main.js.map": "/Robotics_portfolio/static/js/runtime-main.39d5914a.js.map",
+    "static/js/2.d37bafd7.chunk.js": "/Robotics_portfolio/static/js/2.d37bafd7.chunk.js",
+    "static/js/2.d37bafd7.chunk.js.map": "/Robotics_portfolio/static/js/2.d37bafd7.chunk.js.map",
+    "static/js/3.c08283b3.chunk.js": "/Robotics_portfolio/static/js/3.c08283b3.chunk.js",
+    "static/js/3.c08283b3.chunk.js.map": "/Robotics_portfolio/static/js/3.c08283b3.chunk.js.map",
+    "index.html": "/Robotics_portfolio/index.html",
+    "precache-manifest.2f2a1ec209c7c90a685458f59f705c42.js": "/Robotics_portfolio/precache-manifest.2f2a1ec209c7c90a685458f59f705c42.js",
+    "service-worker.js": "/Robotics_portfolio/service-worker.js",
+    "static/css/main.122fb624.chunk.css.map": "/Robotics_portfolio/static/css/main.122fb624.chunk.css.map",
+    "static/js/2.d37bafd7.chunk.js.LICENSE.txt": "/Robotics_portfolio/static/js/2.d37bafd7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.39d5914a.js",
+    "static/js/2.d37bafd7.chunk.js",
+    "static/css/main.122fb624.chunk.css",
+    "static/js/main.413c05a1.chunk.js"
+  ]
+}
