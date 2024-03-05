@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Robotics_portfolio/static/css/main.61740bf2.chunk.css",
-    "main.js": "/Robotics_portfolio/static/js/main.413c05a1.chunk.js",
-    "main.js.map": "/Robotics_portfolio/static/js/main.413c05a1.chunk.js.map",
-    "runtime-main.js": "/Robotics_portfolio/static/js/runtime-main.39d5914a.js",
-    "runtime-main.js.map": "/Robotics_portfolio/static/js/runtime-main.39d5914a.js.map",
-    "static/js/2.d37bafd7.chunk.js": "/Robotics_portfolio/static/js/2.d37bafd7.chunk.js",
-    "static/js/2.d37bafd7.chunk.js.map": "/Robotics_portfolio/static/js/2.d37bafd7.chunk.js.map",
-    "static/js/3.c08283b3.chunk.js": "/Robotics_portfolio/static/js/3.c08283b3.chunk.js",
-    "static/js/3.c08283b3.chunk.js.map": "/Robotics_portfolio/static/js/3.c08283b3.chunk.js.map",
-    "index.html": "/Robotics_portfolio/index.html",
-    "precache-manifest.cab4219c23fd85fb84e59d2097f12a2c.js": "/Robotics_portfolio/precache-manifest.cab4219c23fd85fb84e59d2097f12a2c.js",
-    "service-worker.js": "/Robotics_portfolio/service-worker.js",
-    "static/css/main.61740bf2.chunk.css.map": "/Robotics_portfolio/static/css/main.61740bf2.chunk.css.map",
-    "static/js/2.d37bafd7.chunk.js.LICENSE.txt": "/Robotics_portfolio/static/js/2.d37bafd7.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.61740bf2.chunk.css",
+    "main.js": "/static/js/main.413c05a1.chunk.js",
+    "main.js.map": "/static/js/main.413c05a1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c6fd4c57.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c6fd4c57.js.map",
+    "static/js/2.d37bafd7.chunk.js": "/static/js/2.d37bafd7.chunk.js",
+    "static/js/2.d37bafd7.chunk.js.map": "/static/js/2.d37bafd7.chunk.js.map",
+    "static/js/3.c08283b3.chunk.js": "/static/js/3.c08283b3.chunk.js",
+    "static/js/3.c08283b3.chunk.js.map": "/static/js/3.c08283b3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4f1dda0afce6676564b21d111734c0b5.js": "/precache-manifest.4f1dda0afce6676564b21d111734c0b5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.61740bf2.chunk.css.map": "/static/css/main.61740bf2.chunk.css.map",
+    "static/js/2.d37bafd7.chunk.js.LICENSE.txt": "/static/js/2.d37bafd7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.39d5914a.js",
+    "static/js/runtime-main.c6fd4c57.js",
     "static/js/2.d37bafd7.chunk.js",
     "static/css/main.61740bf2.chunk.css",
     "static/js/main.413c05a1.chunk.js"
