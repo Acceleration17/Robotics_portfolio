@@ -3,6 +3,11 @@ import React, { useRef } from 'react';
 import './App.css'; // Make sure to import the App.css file
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import pic1 from './DSCF2248.png';
+import pic2 from './iteration.jpg';
+import pic3 from './simtoreal.jpg';
+import pic4 from './isaacSim.png';
+import pic5 from './test2.png';
 
 
 
@@ -65,7 +70,7 @@ const HeroSection = () => {
         </div>
         <div className=" pt-20 flex-1 mt-8 md:mt-0">
           <img
-            src="DSCF2248.png" // Replace with your image path
+            src={pic1} // Replace with your image path
             alt="Descriptive text for image"
             className="max-w-full h-auto" // Ensures the image is responsive and doesn't exceed its natural width
             style={{
@@ -97,7 +102,7 @@ const ProjectsSection = () => {
       <div className="flex flex-col items-center gap-16">
         {/* Project 1 */}
         <div className="flex flex-col items-start gap-6" style={fixedWidthStyle}>
-          <img src="iteration.jpg" alt="Project Thumbnail" style={fixedWidthStyle} />
+          <img src={pic2} alt="Project Thumbnail" style={fixedWidthStyle} />
           
           <div className="w-full flex justify-between items-start gap-40">
             <div className="flex flex-col items-start gap-2">
@@ -119,7 +124,7 @@ const ProjectsSection = () => {
       <div className="pt-10 flex flex-col items-center gap-20">
         {/* Project 1 */}
         <div className="flex flex-col items-start gap-6" style={fixedWidthStyle}>
-          <img src="simtoreal.jpg" alt="Project Thumbnail" style={fixedWidthStyle} />
+          <img src={pic3} alt="Project Thumbnail" style={fixedWidthStyle} />
           <div className="w-full flex justify-between items-start gap-20">
             <div className="flex flex-col items-start gap-2">
               <h3 className="text-black text-2xl font-bold">Sim to Real</h3>
@@ -160,7 +165,7 @@ const FocusSection = () => {
         </div>
         <div className="pt-10 flex-1 mt-8 md:mt-0">
           <img
-            src="isaacSim.png" // Replace with your image path
+            src={pic4} // Replace with your image path
             alt="Intersection of Reinforcement Learning & Embodied AI"
             className="max-w-full h-auto" // Ensures the image is responsive and doesn't exceed its natural width
             style={{
@@ -210,7 +215,7 @@ const ContactSection = () => {
         </div>
         <div className="w-full md:w-1/2 flex justify-center md:justify-end"></div>
           <img
-            src="test2.png" // Replace with your image path
+            src={pic5} // Replace with your image path
             alt="Contact Visual"
             style={{ maxWidth: '832px', height: '516px' }}
           />
