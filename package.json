@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://acceleration17.github.io/Robotics_portfolio",
+  "homepage": "https://acceleration17.github.io/",
 
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
