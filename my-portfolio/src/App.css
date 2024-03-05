@@ -1,45 +1,106 @@
+/* App.css */
+/* App.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.App {
-  text-align: center;
-}
+/* You can add custom styles here if needed */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@^2/dist/tailwind.min.css'); /* Import Tailwind CSS */
+.header {
+  padding: 1rem 4rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-bottom: 1px solid black;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Your desired background color */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional shadow for depth */
+  z-index: 1000; /* Keeps the nav above other content */
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-between; /* Spaces out logo and nav items */
+  padding: 0 20px; /* Adjust as needed for your design */
+  align-items: center; /* Centers items vertically */
+}
+
+body {
+  padding-top: 70px; /* Adjust this value based on the actual height of your nav bar */
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 60px; /* Adjust the space between navigation items */
+  padding: 40px;
+
+  white-space: nowrap; /* Prevents the text from wrapping */
+  cursor: pointer; /* Ensures the cursor changes to a pointer on hover */
+  transition: color 0.3s ease; /* Smooth transition for color change (if you're changing color on hover) */
+  
+}
+
+.nav-item:hover {
+  color: #007bff; /* Change to your preferred hover color */
+  text-decoration: underline; /* Adds an underline on hover */
+}
+
+
+
+.action-buttons {
+  display: flex;
+  gap: 1.25rem;
+  /* Add styles for your buttons here */
+}
+
+.nav-item {
+  font-weight: 600; /* Makes nav item font bold */
+}
+
+
+
+.button {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+}
+
+.button-primary {
   color: white;
+  background-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.button-secondary {
+  color: black;
+  background-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Add responsive behavior as needed */
+@media (max-width: 1200px) {
+  .header {
+    padding: 0.5rem 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-item,
+  .button {
+    padding: 0.25rem 0.5rem;
   }
 }
-
-
-
+/* In your CSS file */
+.max-w-custom {
+  max-width: 100px; /* Or any value between the sizes of 7xl and 8xl */
+}
