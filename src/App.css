@@ -1,14 +1,13 @@
-/* App.css */
-/* App.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* App.css - Updated for better mobile responsiveness */
 
-/* You can add custom styles here if needed */
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@^2/dist/tailwind.min.css');
 
-@import url('https://cdn.jsdelivr.net/npm/tailwindcss@^2/dist/tailwind.min.css'); /* Import Tailwind CSS */
+body {
+  padding-top: 70px; /* Adjust based on nav height */
+}
+
 .header {
-  padding: 1rem 4rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid black;
@@ -19,64 +18,37 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff; /* Your desired background color */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional shadow for depth */
-  z-index: 1000; /* Keeps the nav above other content */
-  display: flex; /* Enables flexbox layout */
-  justify-content: space-between; /* Spaces out logo and nav items */
-  padding: 0 20px; /* Adjust as needed for your design */
-  align-items: center; /* Centers items vertically */
-}
-
-body {
-  padding-top: 70px; /* Adjust this value based on the actual height of your nav bar */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  
 }
 
-.nav-actions {
-  display: flex;
-  align-items: center;
-}
-
+.nav-actions,
 .nav-items {
   display: flex;
   align-items: center;
-  gap: 60px; /* Adjust the space between navigation items */
-  padding: 40px;
-
-  white-space: nowrap; /* Prevents the text from wrapping */
-  cursor: pointer; /* Ensures the cursor changes to a pointer on hover */
-  transition: color 0.3s ease; /* Smooth transition for color change (if you're changing color on hover) */
-  
-}
-
-.nav-item:hover {
-  color: #007bff; /* Change to your preferred hover color */
-  text-decoration: underline; /* Adds an underline on hover */
-}
-
-
-
-.action-buttons {
-  display: flex;
-  gap: 1.25rem;
-  /* Add styles for your buttons here */
+  gap: 2rem; /* Adjusted gap */
+  padding: 1rem; /* Fixed typo */
 }
 
 .nav-item {
-  font-weight: 600; /* Makes nav item font bold */
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-
-
-.button {
-  padding: 0.5rem 1rem;
-  border: 1px solid black;
+.nav-item:hover {
+  color: #007bff;
+  text-decoration: underline;
 }
 
 .button-primary {
@@ -89,18 +61,131 @@ body {
   background-color: transparent;
 }
 
-/* Add responsive behavior as needed */
-@media (max-width: 1200px) {
-  .header {
-    padding: 0.5rem 1rem;
+/* Project container styles */
+.project-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1rem; /* Default padding */
+}
+
+/* Responsive iframe */
+.responsive-iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bg-white {
+    padding: 0 50px; /* Adds padding to the left and right */
   }
 
-  .nav-item,
-  .button {
-    padding: 0.25rem 0.5rem;
+  /* Since we used 'md:flex' in the JSX, these styles turn off flex for mobile screens */
+  .hero-section .md:flex {
+    display: block;
   }
+  
+  .hero-section h1 {
+    font-size: 2rem; /* Smaller size for mobile but still prominent */
+  }
+
+  .hero-section text-xl {
+    font-size: 16px; /* Smaller size for mobile but still prominent */
+  }
+
+  .hero-section img {
+    /* Ensure images are full width on mobile and not floated */
+    width: 100%;
+    height: auto;
+    margin-top: 20px; /* Space between the title and the image */
+  }
+
+  /* Adjust the paragraph text to be full width */
+  .hero-section .text-container p {
+    /* If .text-container is not used, replace with the correct class or element selector */
+    width: 100%;
+  }
+  .hero-container {
+    padding-top: 0; /* Remove padding-top */
+  }
+  .hero-container h1 {
+    margin-top: 0; /* Remove margin-top */
+    padding-top: 0; /* Remove padding-top */
+    font-size: 1.75rem; /* Adjust the font size as needed */
+  }
+
+  .focus-section h2 {
+    font-size: 2rem; /* Adjusted font size for mobile */
+  }
+
+  .focus-section p {
+    /* Ensure paragraphs take full width on mobile */
+    width: 100%;
+  }
+
+  .focus-section img {
+    /* Ensure images are full width on mobile and not floated */
+    width: 100%;
+    height: auto;
+    display: block; /* Stack the image below the text */
+    margin-top: 20px; /* Space between the text and the image */
+  }
+
+  .focus-section .md:flex {
+    flex-direction: column;
+  }
+
+  .focus-section .md:flex-1 {
+    width: 100%; /* Full width for mobile */
+    padding-bottom: 1rem; /* Space between text and image */
+  }
+
+  /* Adjust h2 font size for mobile */
+  .focus-section h2 {
+    font-size: 2rem; /* Suitable size for mobile */
+  }
+
+  .focus-section img {
+    /* Ensure images are full width on mobile */
+    width: 100%;
+    height: auto;
+    display: block; /* Stack the image below the text */
+    margin-top: 1rem; /* Space between the title and the image */
+  }
+  .project-image {
+    aspect-ratio: unset; /* Remove fixed aspect ratio on mobile */
+  }
+
 }
-/* In your CSS file */
-.max-w-custom {
-  max-width: 100px; /* Or any value between the sizes of 7xl and 8xl */
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 1.5rem; /* Slightly smaller font size for very small screens */
+  }
+
+  .focus-section h2 {
+    font-size: 1.75rem; /* Slightly smaller font size for very small screens */
+  }
+
+
+
+}
+
+.hero-section {
+  display: block;
+}
+.hero-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 1rem; /* Space between the title and image */
+}
+.project-image {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area without stretching */
+  aspect-ratio: 4 / 3; /* Example ratio, adjust as needed */
 }
